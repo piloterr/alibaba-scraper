@@ -115,7 +115,7 @@ interface AlibabaProduct {
 }
 
 const params = new URLSearchParams({
-  query: "1601175379813",
+  "query": "1601175379813",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/alibaba/product?${params}`, {
@@ -152,7 +152,7 @@ Content-Type: application/json
 
 ### Output example
 
-Illustrative, abridged response — real values depend on the page you scrape.
+Example response from the API reference, abridged — real values depend on the page you scrape.
 
 ```json
 {
@@ -251,7 +251,7 @@ response = requests.get(
     headers={"x-api-key": os.environ["PILOTERR_API_KEY"]},
     params={
         "query": "neon",
-        "page": 1,
+        "page": "1",
     },
     timeout=60,
 )
@@ -291,8 +291,8 @@ interface AlibabaSearch {
 }
 
 const params = new URLSearchParams({
-  query: "neon",
-  page: "1",
+  "query": "neon",
+  "page": "1",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/alibaba/search?${params}`, {
@@ -329,7 +329,7 @@ Content-Type: application/json
 
 ### Output example
 
-Illustrative, abridged response — real values depend on the page you scrape.
+Example response from the API reference, abridged — real values depend on the page you scrape.
 
 ```json
 {
@@ -452,7 +452,7 @@ Any language that can make an HTTP request. This README shows Python and TypeScr
     </picture>
   </a>
   <br>
-  <sub>Built by <a href="https://www.piloterr.com">Piloterr</a> — 500+ web scraping APIs, one API key.</sub>
+  <sub>Built by <a href="https://www.piloterr.com">Piloterr</a> — web scraping APIs for e-commerce, search, real estate and more, one API key.</sub>
 </p>
 
 <sub>Alibaba is a trademark of its respective owner. This repository is not affiliated with or endorsed by Alibaba. Examples are released under the MIT license.</sub>

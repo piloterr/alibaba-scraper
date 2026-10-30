@@ -2,7 +2,7 @@
 // Usage: PILOTERR_API_KEY=your-key node product.mjs
 
 const params = new URLSearchParams({
-  query: "1601175379813",
+  "query": "1601175379813",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/alibaba/product?${params}`, {

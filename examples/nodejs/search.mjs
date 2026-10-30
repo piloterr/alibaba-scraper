@@ -2,8 +2,8 @@
 // Usage: PILOTERR_API_KEY=your-key node search.mjs
 
 const params = new URLSearchParams({
-  query: "neon",
-  page: "1",
+  "query": "neon",
+  "page": "1",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/alibaba/search?${params}`, {

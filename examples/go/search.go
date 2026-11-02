@@ -21,7 +21,7 @@ func main() {
 	req, _ := http.NewRequest("GET", "https://api.piloterr.com/v2/alibaba/search?"+params.Encode(), nil)
 	req.Header.Set("x-api-key", os.Getenv("PILOTERR_API_KEY"))
 
-	client := &http.Client{Timeout: 60 * time.Second}
+	client := &http.Client{Timeout: 120 * time.Second}
 	resp, err := client.Do(req)
 	if err != nil {
 		panic(err)

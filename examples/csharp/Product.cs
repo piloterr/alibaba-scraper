@@ -6,7 +6,7 @@ using System.Text.Json;
 var apiKey = Environment.GetEnvironmentVariable("PILOTERR_API_KEY")
     ?? throw new InvalidOperationException("Set PILOTERR_API_KEY");
 
-using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(60) };
+using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(120) };
 http.DefaultRequestHeaders.Add("x-api-key", apiKey);
 
 var query =

@@ -8,7 +8,7 @@ const params = new URLSearchParams({
 
 const response = await fetch(`https://api.piloterr.com/v2/alibaba/search?${params}`, {
   headers: { "x-api-key": process.env.PILOTERR_API_KEY },
-  signal: AbortSignal.timeout(60_000),
+  signal: AbortSignal.timeout(120_000),
 });
 
 if (!response.ok) {

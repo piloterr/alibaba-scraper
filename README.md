@@ -67,7 +67,7 @@ response = requests.get(
     params={
         "query": "1601175379813",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -253,7 +253,7 @@ response = requests.get(
         "query": "neon",
         "page": "1",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()

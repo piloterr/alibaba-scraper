@@ -10,7 +10,7 @@ $params = http_build_query([
 $ch = curl_init('https://api.piloterr.com/v2/alibaba/search?' . $params);
 curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_TIMEOUT => 60,
+    CURLOPT_TIMEOUT => 120,
     CURLOPT_HTTPHEADER => ['x-api-key: ' . getenv('PILOTERR_API_KEY')],
 ]);
 

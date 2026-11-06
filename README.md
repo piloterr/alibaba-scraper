@@ -24,6 +24,7 @@ Use it to build supplier sourcing tools, B2B price monitoring, product research 
 - [Practical use cases](#practical-use-cases)
 - [Why Piloterr?](#why-piloterr)
 - [FAQ](#faq)
+- [Official SDKs](#official-sdks)
 - [Related scrapers](#related-scrapers)
 - [Support](#support)
 
@@ -430,6 +431,22 @@ Yes. Set `return_page_source=true` and the response becomes `{"result": "..."}` 
 ### Which languages are supported?
 
 Any language that can make an HTTP request. This README shows Python and TypeScript; the [`examples/`](examples) folder contains cURL, PHP, C#, Go, Java, Ruby and Node.js.
+
+## Official SDKs
+
+Use Piloterr from your own language with a typed client:
+
+| SDK | Package | Install |
+| --- | --- | --- |
+| Node.js | [`@piloterr/sdk`](https://www.npmjs.com/package/@piloterr/sdk) | `npm install @piloterr/sdk` |
+| Python | [`piloterr`](https://pypi.org/project/piloterr/) | `pip install piloterr` |
+| Go | [`piloterr-go`](https://pkg.go.dev/github.com/piloterr/piloterr-go) | `go get github.com/piloterr/piloterr-go` |
+| .NET | [`Piloterr`](https://www.nuget.org/packages/Piloterr) | `dotnet add package Piloterr` |
+| Ruby | [`piloterr`](https://rubygems.org/gems/piloterr) | `gem install piloterr` |
+| PHP | [`piloterr/sdk`](https://packagist.org/packages/piloterr/sdk) | `composer require piloterr/sdk` |
+| Java | [`piloterr-java`](https://github.com/piloterr/piloterr-java) | build from source, see its README |
+| CLI | [`@piloterr/cli`](https://www.npmjs.com/package/@piloterr/cli) | `npm install -g @piloterr/cli` |
+| MCP server | [`@piloterr/mcp`](https://www.npmjs.com/package/@piloterr/mcp) | `npx -y @piloterr/mcp` |
 
 ## Related scrapers
 
